@@ -31,14 +31,15 @@ class Planet:
 
 
 class Person:
-    def __init__(self):
-        self.planet = Planet()
+    def __init__(self, person_room, person_population):
+        self.room = person_room
+        self.population = person_population
 
     def get_person_room(self):
-        return self.planet.get_contry().get_city().get_street().get_room().get_name()
+        return self.room
 
     def get_city_population(self):
-        return self.planet.get_contry().get_city().population()
+        return self.population
 
 
 # TODO после выполнения задания попробуйте
